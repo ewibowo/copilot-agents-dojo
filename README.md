@@ -1,75 +1,75 @@
-# Copilot Agent Governance
+# Copilot Agents Dojo 🥋
 
-**Stop letting your AI agents freestyle. Start governing them.**
+**Your AI agents are untrained. Time to put them through the dojo.**
 
-Most teams using GitHub Copilot agents treat them like magic autocomplete. Drop a prompt, hope for the best, clean up the mess. That's not engineering — that's gambling with your codebase.
+Most teams using GitHub Copilot agents let them run wild — no discipline, no form, no kata. Drop a prompt, hope for the best, clean up the wreckage. That's not engineering. That's sparring with a blindfold on.
 
-This repo contains two files that change the game:
+This dojo contains two training scrolls that turn reckless agents into disciplined black belts:
 
-## The Two Files That Matter
+## The Training Scrolls
 
-### [`skills.md`](skills.md) — Agent Behavioral Skills
-The auto-discovered governance layer. Copilot agents pick this up automatically and follow these behavioral rules:
+### [`skills.md`](skills.md) — The Six Disciplines
+The core kata. Copilot agents auto-discover this scroll and train on these disciplines:
 
-- **Plan before coding** — No more cowboy commits. Agents plan multi-step work before touching code.
-- **Use subagents** — Keep context windows clean. Offload research and parallel analysis.
-- **Self-improve** — After every correction, agents capture the lesson and never repeat the mistake.
-- **Verify before done** — No task is complete without proof it works. Tests, logs, diffs.
-- **Demand elegance** — Challenge hacky solutions on non-trivial changes.
-- **Fix bugs autonomously** — Reproduce, diagnose, fix, verify. Zero hand-holding.
+- **🥋 Plan before striking** — No wild swings. Agents plan multi-step work before touching code. Discipline over impulse.
+- **🥋 Deploy your students** — A master delegates. Subagents handle research and parallel analysis. Keep the main dojo clean.
+- **🥋 Learn from every fall** — After every correction, agents capture the lesson. A true practitioner never repeats the same mistake.
+- **🥋 Prove your technique** — No kata is complete without demonstration. Tests, logs, diffs — show your work or it didn't happen.
+- **🥋 Pursue elegant form** — Brute force is for beginners. Challenge hacky solutions. Seek the clean strike.
+- **🥋 Fix what's broken, solo** — Reproduce, diagnose, fix, verify. A black belt doesn't ask the sensei to tie their belt.
 
-### [`.github/copilot-instructions.md`](/.github/copilot-instructions.md) — Project Instructions
-The project-level configuration that ties it all together:
+### [`.github/copilot-instructions.md`](/.github/copilot-instructions.md) — The Dojo Rules
+The house rules that every agent follows when they enter your repo:
 
-- Code standards (TypeScript strict, Tailwind, Vitest)
-- Agent behavioral governance summary with link to skills.md
-- Task management workflow (plan → track → verify → capture lessons)
+- Code standards — your stack, your style, your way (TypeScript strict, Tailwind, Vitest as example)
+- Behavioral governance summary linking back to the disciplines
+- Task management workflow: plan → track → verify → capture lessons
 
-## Why This Matters
+## Why Train Your Agents?
 
-Without governance, AI agents:
-- Skip planning and jump to implementation
-- Never learn from mistakes
-- Produce hacky fixes instead of root-cause solutions
-- Mark tasks "done" without verification
-- Pollute context windows with everything at once
+Untrained agents:
+- Rush in without a plan — all offense, no strategy
+- Never learn from their losses
+- Throw sloppy patches instead of finding the root cause
+- Declare victory without proof
+- Flood the context window like an undisciplined sparring partner
 
-With governance, they behave like **senior engineers** — plan first, verify always, learn constantly.
+Trained agents operate like **seasoned black belts** — plan the approach, execute with precision, verify the outcome, learn from every round.
 
-## How to Use This
+## Enter the Dojo
 
-1. **Copy `skills.md`** to your repo root — Copilot agents auto-discover it
-2. **Copy `.github/copilot-instructions.md`** to your `.github/` folder — customize the Code Standards section for your stack
-3. **Create `tasks/todo.md`** and `tasks/lessons.md` — agents will use these for planning and learning
-4. **Watch your agents level up** — they'll plan before coding, verify before marking done, and capture lessons after corrections
+1. **Place `skills.md` at your repo root** — Copilot agents auto-discover this scroll and begin training immediately
+2. **Place `.github/copilot-instructions.md`** in your `.github/` folder — customize the Code Standards for your fighting style
+3. **Create `tasks/todo.md`** and `tasks/lessons.md` — the training journal where agents plan and record lessons
+4. **Watch the transformation** — your agents will plan before coding, verify before bowing out, and grow stronger after every session
 
-## The Pattern
+## The Dojo Layout
 
 ```
 your-repo/
-├── skills.md                          # Agent behavioral governance (auto-discovered)
+├── skills.md                          # The Six Disciplines (auto-discovered)
 ├── .github/
-│   └── copilot-instructions.md        # Project-specific instructions
+│   └── copilot-instructions.md        # The Dojo Rules
 └── tasks/
-    ├── todo.md                        # Agent planning workspace
-    └── lessons.md                     # Captured mistakes & prevention rules
+    ├── todo.md                        # Battle plan
+    └── lessons.md                     # Defeat log & prevention techniques
 ```
 
-## Adapt It
+## Choose Your Fighting Style
 
-The Code Standards section in `copilot-instructions.md` is specific to a TypeScript/Next.js stack. Replace it with your own:
+The Code Standards section is just one style. Adapt the dojo to your discipline:
 
-- **Python**: pytest, Black, type hints, FastAPI/Django conventions
-- **Java**: JUnit, Spring Boot patterns, Maven/Gradle standards
-- **Go**: standard library conventions, table-driven tests
-- **.NET**: xUnit, clean architecture, nullable reference types
+- **Python** 🐍: pytest, Black, type hints, FastAPI/Django conventions
+- **Java** ☕: JUnit, Spring Boot patterns, Maven/Gradle standards
+- **Go** 🐹: standard library conventions, table-driven tests
+- **.NET** 🛡️: xUnit, clean architecture, nullable reference types
 
-The behavioral governance in `skills.md` is **stack-agnostic** — it works for any language or framework.
+The Six Disciplines in `skills.md` are **style-agnostic** — they work for any language, any framework, any team.
 
-## Credits
+## Origin Story
 
-Born from real-world AI delivery methodology work. These patterns emerged from running agents across production projects and learning what separates chaotic AI-assisted development from disciplined, reliable delivery.
+Forged in real-world AI delivery. These disciplines emerged from running agents across production projects and learning what separates chaotic AI-assisted development from disciplined, battle-tested delivery.
 
 ---
 
-**Star this repo** if you're tired of babysitting your AI agents. Fork it, adapt it, make it yours.
+**⭐ Star this dojo** if you're done babysitting your AI agents. Fork it, train your agents, earn your belt.
